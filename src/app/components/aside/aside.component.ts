@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalCertificateComponent } from '../modal-certificate/modal-certificate.component';
-import { Education, Language } from '../../shared/models/project-typing';
+import { Contact, Education, Language } from '../../shared/models/project-typing';
 
 @Component({
   selector: 'app-aside',
@@ -10,7 +10,7 @@ import { Education, Language } from '../../shared/models/project-typing';
   styleUrls: ['./aside.component.scss']
 })
 export class AsideComponent {
-  public contacts = [
+  public contacts: Contact[] = [
     {
       contactName: this.translateService.instant('contacts.phone'),
       link: 'tel:+375(44)-777-11-67',

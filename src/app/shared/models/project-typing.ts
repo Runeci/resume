@@ -10,3 +10,10 @@ export interface Education {
   profession?: string,
   certificatePath?: string
 }
+
+export interface Contact {
+  contactName: string,
+  link: string,
+  contact: string,
+  icon: string,
+}

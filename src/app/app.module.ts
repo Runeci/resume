@@ -11,7 +11,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
-import { NgxTextExpanderModule } from 'ngx-text-expander';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
@@ -40,7 +39,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
         useDefaultLang: false,
       }),
     FormsModule,
-    NgxTextExpanderModule,
     MatExpansionModule
   ],
   providers: [],

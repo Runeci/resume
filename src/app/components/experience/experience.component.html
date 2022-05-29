@@ -1,0 +1,21 @@
+<div class="experience-container">
+  <div class="skills">
+    <h3 class="skills-header experience-header"> {{ 'skills.skills' | translate | titlecase}} </h3>
+    <ul class="skills-list">
+      <li class="skill-item" *ngFor="let skill of skills">{{ skill | translate }}</li>
+    </ul>
+  </div>
+
+  <div class="pet-projects">
+    <h3 class="experience-header">{{ 'self-funded_exp.exp' | translate | titlecase }}</h3>
+    <ul class="projects-list">
+      <li class="project-item" *ngFor="let project of projects">
+        <h4 class="project-name">
+          <a [href]="project.link" target="_blank">{{ project.name }}</a>
+        </h4>
+        <p class="description">{{ project.description | translate }}</p>
+      </li>
+    </ul>
+  </div>
+
+</div>

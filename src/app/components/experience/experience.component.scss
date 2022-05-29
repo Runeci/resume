@@ -1,0 +1,72 @@
+@import "src/app/shared/styles/variables";
+
+.experience-container {
+  padding: 20px 0;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid $main-color;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skill-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.skill-item:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 8px;
+  width: 8px;
+  background-color: $accent-color;
+}
+
+.project-item {
+  display: flex;
+
+  .project-name {
+    max-width: 90px;
+    min-width: 90px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px 20px 0;
+    border-right: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $main-color;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .description {
+    margin: 0 0 0 20px;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid $main-color;
+  }
+}
+
+@media (max-width: 670px) {
+  .experience-container {
+    padding: 20px 20px;
+  }
+}

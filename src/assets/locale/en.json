@@ -1,0 +1,37 @@
+{
+  "name": "Daryia",
+  "surname": "Kastsianok",
+  "position": "Junior Frontend developer",
+  "profile": "Professional profile",
+  "profile-info": "I recently begun to be fascinated by frontend development. I am keen to gain more knowledge and experience in this field. For this reason, I am looking for a company willing to offer me placement among their developers. In return, I will offer my full commitment and be pleasant and friendly addition to your team. I am therefore looking for a job or an internship as a frontend developer.",
+  "contacts": {
+    "contacts": "contacts",
+    "phone": "phone",
+    "email": "Email",
+    "telegram": "telegram"
+  },
+  "educations": {
+    "education": "education",
+    "BSMU": "Belarussian State Medical University",
+    "BSMU-profession": "Doctor of Medicine",
+    "RS-JS": "Rolling Scopes JavaScript course",
+    "RS-Angular": "Rolling Scopes Angular course"
+  },
+  "languages": {
+    "languages": "Languages",
+    "russian": "Russian",
+    "english": "English",
+    "polish": "Polish",
+    "native": "native"
+  },
+  "skills": {
+    "skills": "Skills"
+  },
+  "self-funded_exp": {
+    "exp": "self-funded experience",
+    "art-quiz": "ArtQuiz is a quiz application for knowledge of masterpieces of painting and their authors. Created using pure JavaScript, SCSS, Webpack.",
+    "rs-trello": "RS Trello is a Kanban-style project management application, Trello prototype. Created using Angular, RxJS.",
+    "rs-lang": "RS Lang is an application for learning foreign words. It includes an textbook with a database of words to learn, mini-games for using them, a statistics page for tracking individual progress.",
+    "christmas-task": "Christmas tree is a game application that allows you to sort Christmas toys by name and number of copies, find a toy by name, group toys by type, add toys to favorites and remove from it, moreover, the application contains an interactive page where you can decorate the Christmas tree with selected toys.Created using TypeScript, SCSS, Webpack."
+  }
+}

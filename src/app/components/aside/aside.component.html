@@ -1,0 +1,38 @@
+<div class="aside">
+
+  <div class="contacts">
+    <h3 class="contacts-header aside-block-header">{{ 'contacts.contacts' | translate }}</h3>
+    <div class="contact" *ngFor="let contact of contacts">
+      <p>
+        <span>{{ contact.contactName | translate | uppercase }}</span>
+        <br>
+        <a [href]="contact.link">{{ contact.contact }}</a>
+      </p>
+      <mat-icon>{{ contact.icon }}</mat-icon>
+    </div>
+  </div>
+
+  <div class="education">
+    <h3 class="education-header aside-block-header">{{ 'educations.education' | translate | titlecase }}</h3>
+    <div class="education-item" *ngFor="let education of educations">
+      <p>
+        <span>{{ education.name | translate }}</span>
+        <br>{{ education.years }}
+        <br>{{ education.profession | translate }}
+      </p>
+    </div>
+  </div>
+
+  <div class="languages">
+    <h3 class="languages-header aside-block-header">{{ 'languages.languages' | translate }}</h3>
+    <div class="language-item" *ngFor="let language of languages">
+      <div class="progress-bar">
+        <div class="progress" [style.width]="language.progress"></div>
+      </div>
+      <p>
+        <span>{{ language.language | translate | titlecase }}</span>
+        <br> {{ language.level | translate | titlecase }}
+      </p>
+    </div>
+  </div>
+</div>

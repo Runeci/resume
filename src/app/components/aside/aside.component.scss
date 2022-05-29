@@ -81,6 +81,14 @@ a {
   p {
     span {
       color: $accent-color;
+      transition: color 0.2s ease-in-out;
+    }
+
+    span.hovered {
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
     }
   }
 }
@@ -114,6 +122,12 @@ a {
   }
 }
 
+.education-item.hovered {
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+}
 
 @media (max-width: 670px) {
   .aside {

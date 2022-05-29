@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalCertificateComponent } from '../modal-certificate/modal-certificate.component';
+import { Education, Language } from '../../shared/models/project-typing';
 
 @Component({
   selector: 'app-aside',
@@ -29,7 +32,7 @@ export class AsideComponent {
 
   ]
 
-  public educations = [
+  public educations: Education[] = [
     {
       name: this.translateService.instant('educations.BSMU'),
       years: '2015-2021',
@@ -38,14 +41,16 @@ export class AsideComponent {
     {
       name: this.translateService.instant('educations.RS-JS'),
       years: '2021-2022',
+      certificatePath: './assets/images/js.png',
     },
     {
       name: this.translateService.instant('educations.RS-Angular'),
       years: '2022',
+      certificatePath: './assets/images/angular.png',
     }
   ]
 
-  public languages = [
+  public languages: Language[] = [
     {
       language: this.translateService.instant('languages.russian'),
       level: this.translateService.instant('languages.native'),
@@ -64,6 +69,16 @@ export class AsideComponent {
     }
   ]
 
-  constructor(private translateService: TranslateService) {
+  constructor(private translateService: TranslateService,
+              public dialog: MatDialog) {
+  }
+
+  public openDialog(imagePath: Education['certificatePath']) {
+    if (!imagePath) {
+      return
+    }
+    this.dialog.open(ModalCertificateComponent,  {
+      data: { certificatePath: imagePath },
+    });
   }
 }

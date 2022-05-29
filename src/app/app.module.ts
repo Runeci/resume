@@ -12,6 +12,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ModalCertificateComponent } from './components/modal-certificate/modal-certificate.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
   return new TranslateHttpLoader(http, '../assets/locale/', '.json');
@@ -21,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
   declarations: [
     AppComponent,
     AsideComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ModalCertificateComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
         useDefaultLang: false,
       }),
     FormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

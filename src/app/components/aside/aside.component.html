@@ -14,11 +14,16 @@
 
   <div class="education">
     <h3 class="education-header aside-block-header">{{ 'educations.education' | translate | titlecase }}</h3>
-    <div class="education-item" *ngFor="let education of educations">
+    <div class="education-item"
+         *ngFor="let education of educations"
+         (click)="openDialog(education.certificatePath)"
+    >
       <p>
-        <span>{{ education.name | translate }}</span>
+        <span
+          [ngClass]="{'hovered': education.certificatePath}">{{ education.name | translate }}
+        </span>
         <br>{{ education.years }}
-        <br>{{ education.profession | translate }}
+        <br>{{ education.profession! | translate }}
       </p>
     </div>
   </div>

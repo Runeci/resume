@@ -13,7 +13,7 @@ export class ExperienceComponent {
     {
       name: 'RS Trello',
       description: this.translateService.instant('self-funded_exp.rs-trello'),
-      link: 'https://unique-pastelito-0b05d0.netlify.app/home',
+      link: 'https://rstrello.netlify.app/home',
     },
     {
       name: 'Art Quiz',

@@ -23,7 +23,7 @@ export class ExperienceComponent {
     {
       name: 'RS Lang',
       description: this.translateService.instant('self-funded_exp.rs-lang'),
-      link: 'https://seregaby2.github.io/rs-lang/',
+      link: 'https://rs-lang-22.netlify.app/',
     },
     {
       name: 'Christmas tree',

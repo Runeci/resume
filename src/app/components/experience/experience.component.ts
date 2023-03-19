@@ -9,7 +9,14 @@ import { TranslateService } from '@ngx-translate/core';
 export class ExperienceComponent {
   constructor(private translateService: TranslateService) {
   }
-  public projects = [
+  public jobs = [
+    {
+      name: 'Andersen Lab',
+      period: 'real_exp.andersen.period',
+      link: 'https://andersenlab.com/',
+    }
+  ];
+  public petProjects = [
     {
       name: 'RS Trello',
       description: this.translateService.instant('self-funded_exp.rs-trello'),

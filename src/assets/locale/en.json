@@ -33,5 +33,11 @@
     "rs-trello": "RS Trello is a Kanban-style project management application, Trello prototype. Created using Angular, RxJS.",
     "rs-lang": "RS Lang is an application for learning foreign words. It includes an textbook with a database of words to learn, mini-games for using them, a statistics page for tracking individual progress. Created using pure TypeScript, SCSS, Webpack.",
     "christmas-task": "Christmas tree is a game application that allows you to sort Christmas toys by name and number of copies, find a toy by name, group toys by type, add toys to favorites and remove from it, moreover, the application contains an interactive page where you can decorate the Christmas tree with selected toys.Created using TypeScript, SCSS, Webpack."
+  },
+  "real_exp": {
+    "experience": "experience",
+    "andersen": {
+      "period": "August 2022 - present"
+    }
   }
 }

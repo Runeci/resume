@@ -6,14 +6,29 @@
     </ul>
   </div>
 
-  <div class="pet-projects">
-    <h3 class="experience-header">{{ 'self-funded_exp.exp' | translate | titlecase }}</h3>
+  <div class="real-projects">
+    <h3 class="experience-header">{{ 'real_exp.experience' | translate | titlecase }}</h3>
     <ul class="projects-list">
-      <li class="project-item" *ngFor="let project of projects">
+      <li class="project-item" *ngFor="let project of jobs">
         <h4 class="project-name">
           <a [href]="project.link" target="_blank">{{ project.name }}</a>
         </h4>
-        <p class="description">{{ project.description | translate }}</p>
+        <p class="description">
+          {{ project.period | translate}}
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pet-projects">
+    <h3 class="experience-header">{{ 'self-funded_exp.exp' | translate | titlecase }}</h3>
+    <ul class="projects-list">
+      <li class="project-item" *ngFor="let project of petProjects">
+        <h4 class="project-name">
+          <a [href]="project.link" target="_blank">{{ project.name }}</a>
+        </h4>
+        <p class="description">
+          {{ project.description | translate }}</p>
       </li>
     </ul>
   </div>

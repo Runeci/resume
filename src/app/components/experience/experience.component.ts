@@ -40,5 +40,5 @@ export class ExperienceComponent {
     }
   ];
 
-  public skills = ['JavaScript', 'HTML', 'CSS/SCSS', 'Angular', 'GIT'];
+  public skills = ['Angular', 'TypeScript', 'Jest' ,'JavaScript', 'HTML', 'CSS/SCSS',  'GIT'] ;
 }
